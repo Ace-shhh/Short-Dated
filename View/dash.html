@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>analytics</title>
+        <meta charset="utf-8" >
+        <link rel="stylesheet" href="../styles.css">
+        <meta name="viewport" content="width= device-width, initial-scale=1.0">
+        
+    </head>
+
+    <body>
+        <div class="page">
+            
+            <div class="left-menu">
+                <p>Left Menu</p>
+                <div class="left-menu-content">
+                    <button>Button</button>
+                    <button>Button</button>
+                    <button>Button</button>
+                    <button>Button</button>
+                </div>
+
+                <div class="sign-out-container">
+                    <button class="sign-out-button">Sign Out</button>
+                </div>
+
+            </div>
+                
+            <div class="data-analytics">
+                <div class="top-bar">
+                    <p>Dashboard</p>
+                </div>
+
+                <div class="add-button-container">
+                    
+                    <button class="add-button">
+                        <img src="../images/add.png" class="add-image">
+                        <p class="add-p">Add Short Dates</p>
+                    </button>
+
+                </div>
+
+                <div id="addItemForm" style="display: none;">
+                    <div class="formItems">
+                        <div class="formInputContainer">
+                            <label for="itemName">Item name:</label>
+                            <input class="formInput" type="text" id="itemName" placeholder="Item name" required>
+                            <label for="dateOfExpiry">Date of Expiry:</label>
+                            <input class="formInput" type="date" id="dateOfExpiry"placeholder= "of expiry" required>
+                            <label for="dayToRemind">Days to remind: </label>
+                            <input class="formInput" type="number" value="3" placeholder="Days before" required>
+                        </div>
+                        <div class="formButtons">
+                            <button class="submitButton" type="submit">Submit</button>
+                            <button class="closeButton"type="button" id="closeForm">Close</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="charts-container">
+                    <div class="histogram-container">
+                        <p>histogram-container</p>
+                    </div>
+
+                    <div class="pie-chart-container">
+                        <div>pie-chart-container</div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <script src="../script.js" defer></script>
+    </body>
+</html>

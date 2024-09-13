@@ -10,6 +10,9 @@ const mongoose = require('mongoose')
 //     res.json({messg: 'Welcome to the app'})
 // })
 
+
+
+
 //middleware
 app.use(express.json())
 

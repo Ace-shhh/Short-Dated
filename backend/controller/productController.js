@@ -1,6 +1,8 @@
 const Product = require('../models/productModel')
 const mongoose = require('mongoose')
 
+
+
 // get all product
 const getProducts = async (req, res) =>{
     const productDb = await Product.find({}).sort({createdAt: -1})
@@ -27,10 +29,11 @@ const getSingleProduct = async(req, res) =>{
 
 // create new product
 const createProduct = async (req, res) =>{
-    const {item, expiry, remind} = req.body;
+    console.log(req.body)
+    const {section, type, brand, expiry, remind} = req.body;
 
     try {
-        const product = await Product.create({item, expiry, remind})
+        const product = await Product.create({section, type, brand, expiry, remind})
         res.status(200).json(product)
     } catch (error) {
         res.status(400).json({error: error.message})
